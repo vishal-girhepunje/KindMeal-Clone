@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #nav{
+        #nav {
             display: flex;
+            /* margin-top: 200px; */
             justify-content: space-evenly;
             background-color: green;
             color: white;
+            height: 60px;
         }
-        #top{
+
+        #top {
             display: flex;
         }
-       #logo{
-        margin-right: 80px;
-        width: 200px;
-        height: 50px;
-       }
-       #sub-1>img{
-        width: 50px;
-        height: 50px;
-        margin-right: 30px;
-       }
-       #sub-1{
-        display: flex;
-       }
-       #sub-2{
-     display: flex;
-     margin-right: 10px;
-       }
-       #sub-2>button,button{
-        width: 80px;
-        height: fit-content;
-       }
-       #slide>img {
-        margin: auto;
-        display: block;
-        width: 90%;
-        height: 400px;
-       }
+
+        #logo {
+            margin-right: 80px;
+            width: 200px;
+            height: 80px;
+        }
+
+        #sub-1>img {
+            width: 50px;
+            height: 50px;
+            margin-right: 30px;
+        }
+
+        #sub-1 {
+            display: flex;
+            margin: 5px 20px 5px 0px;
+        }
+
+        #sub-2 {
+            display: flex;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        #sub-2>button,
+        button {
+            width: 80px;
+            height: fit-content;
+        }
+        #nav>h4:hover {
+            background-color: rgb(4, 82, 4);
+        }
+/* //////////Nav barr csss part */
+
+
+
+
+        #slide>img {
+            margin: auto;
+            display: block;
+            width: 90%;
+            height: 300px;
+        }
+
        
-       #sec>img,#third>img,#four>img,#five>img{
-        width: 20%;
-        height: 200px;
-       }
-       #sub-sec1,#sub-sec2,#sub-sec3,#sub-sec4{
-        display: flex;
-       }
-       #sub-sec>div>a{
-        font-size: xx-large;
-        margin-left: 30px;
-       }
-    #sub1,#sub2,#sub3,#sub4{
-        display: flex;
-        width: 300px;
-        justify-content: space-evenly;
-        margin-left: 500px;
-       }
-      #sec,#third,#four,#five{
-        margin: auto;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-       margin-bottom: 50px;
-        width: 80%;
-        height: 300px;        
-      }
-       #six-2{
+        #sec,#third,#four,#five{
+            margin: 2px solid red;
+            width: 80%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 5px 15px 10px 15px;
+            margin-top: 20px;
+        }
+        #sub_sec{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #sub_sec>div{
+            /* border: 2px solid black; */
+        margin-top: 20px;  
+        height: 100%;
+          }
+          #sub_sec2,#third1,#four1,#five1{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+          }
+          #sub_sec2>div>img,#third1>div>img,#four1>div>img,#five1>div>img{
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+          }
+         
+          #sub_sec2>div>p,#third1>div>p,#four1>div>p,#five1>div>p{
+            font-size: 10px;
+          }
+          #big{
+            display: block;
+            width: fit-content;
+            margin: auto;
+            background-color: rgb(241, 95, 95);
+            border:  rgb(241, 95, 95);
+            border-radius: 5px;
+          }
+          
+          #six-2{
         display: flex;
         justify-content: space-evenly;
        }
@@ -75,23 +113,19 @@
         width: auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
        }
-       six-2 div>img{
-        width: 95%;
-       }
-
        #six-1>h1,#six-1>h3{
         text-align: center;
        }
-       #six button{
-        margin-left: 450px;
-        background-color: aqua;
-         /* padding:8px 120px; */
-         /* text-align: center; */
-         border:aqua;
+       six-2 div>img{
+        width: 95%;
        }
     </style>
 </head>
+
 <body>
+
+
+    <!-- nav bar part start   -->
     <div id="top">
         <img id="logo" src="./logs.png" alt="">
         <div id="sub-1">
@@ -100,87 +134,85 @@
             <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
         </div>
         <div id="sub-2">
-           <button>Login</button>
-           <button>Facebook</button>
-           <button>Email</button>
-
+            <button> <a href=" "></a> Login</button>
+            <button>Facebook</button>
+            <button>Email</button>
+            <button>sign-up</button>
         </div>
-        <button>sign-up</button>
-         </div>
-         <div id="nav">
-        <h4>Home</h4>
-        <h4>Meal Deals</h4>
-        <h4>KindMoments</h4>
-        <h4>Hot Picks</h4>
-        <h4>Recipes</h4>
-        <h4>Directory</h4>
-        <h4>Articles</h4>
-        <h4>Help</h4>
+        
     </div>
+    <div id="nav">
+        <h4> <a href="./index.html"> Home </a></h4>
+        <h4> <a href="./mealdeal.html">Meal Deals</a> </h4>
+        <h4> <a href="./kindmoment.html"> KindMoments</a></h4>
+        <h4> <a href="./hotpick.html"> Hot Picks </a></h4>
+        <h4> <a href="./recipe.html"> Recipes</a></h4>
+        <h4> <a href="./directoy.html"> Directory </a></h4>
+        <h4> <a href="./articles.html"> Articles </a></h4>
+        <h4> <a href="./help.html"> Help</a></h4>
+    </div>
+<!--      Nav bar part end    -->
+
 
     <div id="slide">
 
     </div>
 
     <div id="sec">
-        <div id="sub-sec1">
+        <div id="sub_sec">
+            <h2>Latest News & Videos</h2>
             <div>
-                <h2>
-                    Latest News & Videos</h2>
+                <a href="">Save Lives with Your Blog</a>
+                <a href=""> News & Articles</a>
+                <a href="">Follow Our Facebook</a>
             </div>
-            <div id="sub1">
-                <a href="">Save Lives</a>
-                <a href="">  News & Articles </a><a href=""> Follow Our Facebook</a>
-            </div>
-           
-        </div>
 
+        </div>
+        <div id="sub_sec2">
+
+        </div>
     </div>
     <div id="third">
-        <div id="sub-sec2">
+        <div id="sub_sec">
+            <h2>Yummylicious Moments</h2>
             <div>
-                <h2>
-                   
-                    Yummylicious Moments</h2>
-            </div>
-            <div id="sub2">
                 <a href="">Secret Recipes </a>
-                <a href="">   Member Hot Picks </a><a href="">   Photo Moments</a>
+                <a href="">   Member Hot Picks </a>
+                <a href="">   Photo Moments</a>
             </div>
-           
+
+        </div>
+        <div id="third1">
+
         </div>
     </div>
-
     <div id="four">
-        <div id="sub-sec3">
+        <div id="sub_sec">
+            <h2>Discover Restaurants</h2>
             <div>
-                <h2>
-                    Discover Restaurants</h2>
-            </div>
-            <div id="sub3">
                 <a href="">Vegetarian Directory  </a>
                 <a href="">  Restaurant Menu   </a>
                 <a href=""> Food Map</a>
             </div>
-           
+
         </div>
+        <div id="four1">
 
+        </div>
     </div>
-
     <div id="five">
-        <div id="sub-sec4">
+        <div id="sub_sec">
+            <h2> Amazing Superheroes</h2>
             <div>
-                <h2>                    
-                    Amazing Superheroes</h2>
-            </div>
-            <div id="sub4">
                 <a href="">Latest Buzz</a>
                 <a href="">Lifestyle Amadors </a>
                 <a href="">    Win Gifts!</a>
             </div>
-           
-        </div>
 
+        </div>
+        <div id="five1">
+
+        </div>
     </div>
     <div id="six">
         <div id="six-1">
@@ -212,66 +244,67 @@
     </div>
     <div> <h3 style="text-align:center">Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free. <br>
         Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</h3>
-        <button ><h2>Join </button></div>
-       
-        </div>
-    
-    <div id="seven">
-        <div>
-            <img src="https://www.kindmeal.my/images/media-feature2.png" alt="">
-        </div>
-        
-        <div>
-            <img src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="">
-        </div>
+        </div> 
 
+<button id="big">
+    <h1>Join 24Hour Now</h1>
+    <p>Your tasty journey begins here</p>
+</button>
+<div id="seven">
+    <div>
+        <img src="https://www.kindmeal.my/images/media-feature2.png" alt="">
     </div>
-   
+    
+    <div>
+        <img src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="">
+    </div>
+
+</div>
 </body>
+
 </html>
 <script>
-    let slide_show0 = ["https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg",
-    "https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg",
-    "https://www.kindmeal.my/photos/deal/6/665-4120-m.jpg",
-    "https://www.kindmeal.my/photos/deal/4/498-2202-m.jpg",
-    "https://www.kindmeal.my/photos/deal/2/271-519-m.jpg",
-    "https://www.kindmeal.my/photos/deal/7/709-4950-m.jpg",
-    "https://www.kindmeal.my/photos/deal/7/719-5142-m.jpg"
-]
+    let slide = ["https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg",
+        "https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg",
+        "https://www.kindmeal.my/photos/deal/6/665-4120-m.jpg",
+        "https://www.kindmeal.my/photos/deal/4/498-2202-m.jpg",
+        "https://www.kindmeal.my/photos/deal/2/271-519-m.jpg",
+        "https://www.kindmeal.my/photos/deal/7/709-4950-m.jpg",
+        "https://www.kindmeal.my/photos/deal/7/719-5142-m.jpg"
+    ]
     let i = 0
 
-let int = setInterval(() => {
-    document.querySelector("#slide").innerHTML = ""
-    if (i == 7) {
-        i = 0;
-    }
-    let x = document.createElement("img")
-    x.setAttribute("src", slide_show0[i])
-    document.querySelector("#slide").append(x)
-    i = i + 1;
-    console.log(i)
-}, 1500);
+    let int = setInterval(() => {
+        document.querySelector("#slide").innerHTML = ""
+        if (i == 7) {
+            i = 0;
+        }
+        let x = document.createElement("img")
+        x.setAttribute("src", slide[i])
+        document.querySelector("#slide").append(x)
+        i = i + 1;
+        console.log(i)
+    }, 3500);
 
-let slide_show1 = ["https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/271582707_265022372394889_56974782009965446_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=AvnOZmUGPm4AX9yLKFO&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfCyzHMh3sasm_llPjMB7k7YgA9XuVzauflyWg_KOEpihQ&oe=6370EA63",
+    let sec_img = ["https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/271582707_265022372394889_56974782009965446_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=AvnOZmUGPm4AX9yLKFO&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfCyzHMh3sasm_llPjMB7k7YgA9XuVzauflyWg_KOEpihQ&oe=6370EA63",
         "https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/117878469_336434917736037_3866333495709289709_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=LJ4Mzxi0yckAX9Yttmo&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfChtJ40oLGRvxp4OQm_sVI4ZoQiV2JdSrDoB5h36b6-VQ&oe=63701905",
         "https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/289716764_300414298892410_2889986081793667301_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RwwitqaIrFQAX8XdIRZ&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfBZzDctQ9tKqv6OJloZ80OjpR5TE_O-M-Xvvok4SsbRQA&oe=6370DF70",
         "https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/291422646_573014587525199_3892685742425568101_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=pshf3n2STnkAX-cNyKG&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfD3yzl6vitP3fbEePjvuua6Lk6f-rZ5Wwvct24XQRHoOQ&oe=63701FBF",
         "https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/275003363_278209630970215_750071011921898739_n.jpg?stp=dst-jpg_s720x720&_nc_cat=102&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=MYvXUHntQUAAX__0omw&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfAwnwmMEzduOl9vygVvnNx4CZY3Kib1srQqujGhZe-DrA&oe=6370372C"
         ]
-        let slide_show1p1=["Mama And Baby Elephant Get Stuck In 7 Foot Hole",
+        let anchor1=["Mama And Baby Elephant Get Stuck In 7 Foot Hole",
         "Watch These White Fluffy Babies Turn Into The Most Gorgeous ..",
         "Goulash & Dumplings From Speedy Bosh!",
         "Best Friends At Off The Plate Sanctuary",
         "A Sealabration Of Ocean Pups"
         ]
-        
-    let third_img= ["https://www.kindmeal.my/photos/moment/24/24604-47676-s.jpg",
+        let third_img= ["https://www.kindmeal.my/photos/moment/24/24604-47676-s.jpg",
         "https://www.kindmeal.my/photos/moment/24/24597-47663-s.jpg",
         "https://www.kindmeal.my/photos/moment/24/24596-47660-s.jpg",
         "https://www.kindmeal.my/photos/moment/24/24595-47657-s.jpg",
         "https://www.kindmeal.my/photos/moment/24/24594-47652-s.jpg"
     ]
-    let third_p=["Seed Organic Farm & Wholesome Dining",
+    let anchor2=["Seed Organic Farm & Wholesome Dining",
         "Malaysian Favorites & Ramen",
         "Malaysian Favorites & Ramen",
         "Simple Is the Best",
@@ -283,38 +316,66 @@ let slide_show1 = ["https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/271582707
         "https://www.kindmeal.my/photos/item/0/429-4916-s.jpg",
         "https://www.kindmeal.my/photos/item/0/479-5704-s.jpg"
     ]
-    
+    let anchor3=["Gailan with Ginger",
+    "Toon Sprout Sauce with Soya Noodle",
+    "Vege Siew Gor Rice",
+    "Choc Waffle with Homemade Peanut Butter ",
+    "Freedom Toast"
+
+    ]
     let five_img = ["https://www.kindmeal.my/photos/member/41/41892-m.jpg",
         "https://www.kindmeal.my/photos/member/15/15135-m.jpg",
         "https://www.kindmeal.my/photos/member/25/25371-m.jpg",
         "https://www.kindmeal.my/photos/member/41/41025-m.jpg",
         "https://www.kindmeal.my/photos/member/40/40651-m.jpg"
     ]
+    let anchor4=["YvonneLim1",
+"CarrisSFWong","JoleneTeow1","ChongKaPoh","William21"]
+        let sec_p=0
+        sec_img.forEach((elem)=>{
+            let div=document.createElement("div")           
+        let x=document.createElement("img")
+         x.setAttribute("src",elem)
+         let p=document.createElement("p")
+         p.innerText=anchor1[sec_p]
+         div.append(x,p)
+         document.querySelector("#sub_sec2").append(div)
+         sec_p=sec_p+1
+    })
 
-    slide_show1.forEach((elem)=>{
+    let third=0
+        third_img.forEach((elem)=>{
+            let div=document.createElement("div")           
         let x=document.createElement("img")
          x.setAttribute("src",elem)
-         document.querySelector("#sec").append(x)
+         let p=document.createElement("p")
+         p.innerText=anchor3[third]
+         div.append(x,p)
+         document.querySelector("#third1").append(div)
+         third=third+1
     })
-    let p=document.createElement("p")
-    p=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis voluptates suscipit soluta cumque nostrum, omnis pariatur nesciunt explicabo eaque aut sapiente ipsa excepturi ab incidunt a modi nulla maiores. Minima."
-    document.querySelector("#sec").append(p)
-    slide_show2.forEach((elem)=>{
+
+    let four=0
+        four_img.forEach((elem)=>{
+            let div=document.createElement("div")           
         let x=document.createElement("img")
          x.setAttribute("src",elem)
-         document.querySelector("#third").append(x)
+         let p=document.createElement("p")
+         p.innerText=anchor3[four]
+         div.append(x,p)
+         document.querySelector("#four1").append(div)
+         four=four+1
     })
-    document.querySelector("#third").append(p)
-    slide_sho3.forEach((elem)=>{
+
+    let five=0
+        five_img.forEach((elem)=>{
+            let div=document.createElement("div")           
         let x=document.createElement("img")
          x.setAttribute("src",elem)
-         document.querySelector("#four").append(x)
+         let p=document.createElement("p")
+         p.innerText=anchor4[five]
+         div.append(x,p)
+         document.querySelector("#five1").append(div)
+         five=five+1
     })
-    document.querySelector("#four").append(p)
-    slide_show4.forEach((elem)=>{
-        let x=document.createElement("img")
-         x.setAttribute("src",elem)
-         document.querySelector("#five").append(x)
-    })
-    
 </script>
