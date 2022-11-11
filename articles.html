@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Article</title>
     <style>
+         #nav {
+            display: flex;
+            /* margin-top: 200px; */
+            justify-content: space-evenly;
+            background-color: green;
+            color: white;
+            height: 60px;
+        }
+
+        #top {
+            display: flex;
+        }
+
+        #logo {
+            margin-right: 80px;
+            width: 200px;
+            height: 80px;
+        }
+
+        #sub-1>img {
+            width: 50px;
+            height: 50px;
+            margin-right: 30px;
+        }
+
+        #sub-1 {
+            display: flex;
+            margin: 5px 20px 5px 0px;
+        }
+
+        #sub-2 {
+            display: flex;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        #sub-2>button,
+        button {
+            width: 80px;
+            height: fit-content;
+        }
+        #nav>h4:hover {
+            background-color: rgb(4, 82, 4);
+        }
+/* //////////Nav barr csss part */
+
+
         body{
             margin: 0px;
             padding: 0px;
@@ -46,6 +93,38 @@
     </style>
 </head>
 <body>
+
+    
+
+    <!-- nav bar part start   -->
+    <div id="top">
+        <img id="logo" src="./logs.png" alt="">
+        <div id="sub-1">
+            <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+        <div id="sub-2">
+            <button>Login</button>
+            <button>Facebook</button>
+            <button>Email</button>
+            <button>sign-up</button>
+        </div>
+        
+    </div>
+    <div id="nav">
+        <h4> <a href="./index.html"> Home </a></h4>
+        <h4> <a href="./mealdeal.html">Meal Deals</a> </h4>
+        <h4> <a href="./kindmoment.html"> KindMoments</a></h4>
+        <h4> <a href="./hotpick.html"> Hot Picks </a></h4>
+        <h4> <a href="./recipe.html"> Recipes</a></h4>
+        <h4> <a href="./directoy.html"> Directory </a></h4>
+        <h4> <a href="./articles.html"> Articles </a></h4>
+        <h4> <a href="./help.html"> Help</a></h4>
+    </div>
+<!--      Nav bar part end    -->
+
+
     <div id="upper">
         <h2>  Yummy News, Articles & Videos    </h2>
     <p> Want to keep updated on the latest news of delicious meat-free meals and adorable animals? 
