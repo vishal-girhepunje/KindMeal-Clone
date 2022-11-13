@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: auto;
+            margin: auto;
+            display: block;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            text-align: center;
+            
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            margin-bottom:20px;
+        }
+        #name{
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+          
+        }
+        #pass{
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+      
+        }
+        #log{
+            display: block;margin-top: 20px;
+            margin-left: 180px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./logs.png" alt="">
+        <h1>Member Login</h1>
+        <input id="name" type="text" name="" value="">
+        <input id="pass" type="password" name="" >
+        <button onclick="my_log()" id="log">Login</button>
+        <hr>
+        <button>Facebook</button>
+    </div>
+</body>
+</html>
+<script>
+    function my_log(){
+        let name=document.querySelector("#name").value
+        let pass=document.querySelector("#pass").value
+        if(name!="" || pass!=""){
+            let obj={
+                name,pass
+            }
+            localStorage.setItem("details",JSON.stringify(obj))
+        }else{
+            alert("Please fill form")
+        }
+    }
+</script>

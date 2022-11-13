@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: antiquewhite;
+        }
+        #detail{
+            border: 2px red;
+            display:flex;
+            height: 300px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        h2{
+            color: rgb(0, 255, 136);
+        }
+
+        #detail div{
+            border: 2px solid rgb(155, 124, 124);
+            width: 400px;
+            text-align: center;
+            /* display: grid; */
+            margin-top: 10px;
+
+        }
+        #bottom{
+            display: flex;
+            justify-content:space-between;
+            height: 300px;
+            background-color: rgb(28, 131, 28);
+        }
+        #bottom div{
+            width: 20%;
+            height: 100px;
+            font-size: small;
+            border: 0px red;
+        }
+    </style>
+</head>
+<body>
+    <div id="detail">
+        
+    </div>
+</body>
+</html>
+<script>
+    let x=JSON.parse(localStorage.getItem("signup_details"))
+    display(x)
+    function display(x){
+        div=document.createElement("div")
+        let msg=document.createElement("h2")
+        msg.innerText="Sign up sucess fully"
+        
+        let p=document.createElement("h3")
+        p.innerText="Name:- "+x.name
+        let p2=document.createElement("h3")
+        p2.innerText="Last Name:- "+x.last
+        let p3=document.createElement("p")
+        p3.innerText="Phone no:-"+x.mobile
+        let p4=document.createElement("p")
+        p4.innerText="E-mail:-"+x.email
+        let btn=document.createElement("button")
+        btn.innerText="login"
+        
+        div.append(msg,p,p2,p3,p4)
+        document.querySelector("#detail").append(div)
+    
+    }
+</script>

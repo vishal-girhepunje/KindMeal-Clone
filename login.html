@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+</head>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(bg_img.jpg) no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: sans-serif;
+}
+.container{
+	position: relative;
+	margin-top: 100px;
+	width: 450px;
+	height: auto;
+	background: #dedede;
+	border-radius: 5px;
+}
+#logo img{
+	width: 450px;
+	height: 150px;
+	
+}
+.label{
+	padding: 20px 130px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #130f40;
+}
+.login_form{
+	padding: 20px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #3a48e7;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: #144c94;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #ec1313;
+	background: rgba(148, 16, 16, 0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #f78181;
+	display: none;
+}
+</style>
+<body>
+	<div class="container">
+		<div id="logo"><img src="./logs.png" alt=""></div>
+		<h1 class="label">User Login</h1>
+		<form class="login_form"  method="post" name="form" >
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email" id="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password" id="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<!-- <a href="./home.html"> -->
+				<button onclick="login()" type="button">Login</button>
+			<!-- </a> -->
+			
+		</form>
+	</div>	
+</body>
+</html>
+<script >
+	//Validtion Code For Inputs
+	
+
+// var email_error = document.getElementById('email_error');
+// var pass_error = document.getElementById('pass_error');
+
+// email.addEventListener('textInput', email_Verify);
+// password.addEventListener('textInput', pass_Verify);
+function login(){
+	
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+let login_detail = JSON.parse(localStorage.getItem("signup_details"));
+var save_email=login_detail.email
+var save_password=login_detail.password
+
+if(email==save_email && password==save_password){
+	alert("login sucessfully")
+	localStorage.setItem("login_status",true)
+	window.location = "home.html";
+}else{
+	alert("Wrong username passwaord")
+}
+	// console.log(login_detail)
+
+
+}
+
+// function validated(){
+// if (email.value.length < 9) {
+// email.style.border = "1px solid red";
+// email_error.style.display = "block";
+// email.focus();
+// return false;
+// }
+// if (password.value.length < 6) {
+// password.style.border = "1px solid red";
+// pass_error.style.display = "block";
+// password.focus();
+// return false;
+// }
+
+// }
+// function email_Verify(){
+// if (email.value.length >= 8) {
+// email.style.border = "1px solid silver";
+// email_error.style.display = "none";
+// return true;
+// }
+// }
+// function pass_Verify(){
+// if (password.value.length >= 5) {
+// password.style.border = "1px solid silver";
+// pass_error.style.display = "none";
+// return true;
+// }
+// }
+</script>
