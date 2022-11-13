@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #signup{
+         width: 400px;
+         background-color: antiquewhite;
+         height: 530px;
+         color:blue;
+         margin-top: 100px;
+         margin-left: 450px;
+         border-radius: 20px;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+         border: 1px solid white;
+         text-align: center;
+         /* height: 100vh; */
+      }
+      #signup button{
+        width: 175px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(122, 160, 230);
+        border: 0px;
+      }
+
+    </style>
+</head>
+<body>
+        <div id="signup">
+            <h1>Register New Account</h1>
+            <label> First Name </label><br>
+            <input type="text" name="" id="naam" placeholder="Enter First Name"><br><br>
+            <label> Last Name </label><br>
+            <input type="text" name="" id="last" placeholder="Enter Last Name"><br><br>
+            <label>Email Address</label><br>
+            <input type="text" id="ema" placeholder="Enter Email"><br><br>
+            <label for="">Mobile no.</label><br>
+            <input id="num" type="number"placeholder="Enter mobile number"><br><br>
+            <label>Password</label><br>
+            <input type="password" id="password" placeholder="Create Password(atleast 8 characters)"><br><br>
+            <label>Confirm Password</label><br>          
+            <input type="password" id="cnf" placeholder="Confirm Password"><br>
+            <p>Already Registered? <a style="color: rgb(83, 52, 52);" href="./login.html">LOGIN</a> </p>    
+            <a href="./profile.html">
+                <button id="but"> Sign Up</button>
+            </a>
+           
+    
+        </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click", fun2);
+
+
+
+function fun2(event) {
+    let name = document.querySelector("#naam").value;
+    let last = document.querySelector("#last").value;
+    let email = document.querySelector("#ema").value;
+    let mobile = document.querySelector("#num").value;
+    let password = document.querySelector("#password").value;
+    let confirm = document.querySelector("#cnf").value;
+    if(name!="" || last!="" || email!=""|| mobile!="" || password!=""  || confirm!=""){
+        let dataobj={
+        name,
+        last,
+        email,
+        mobile,
+        password,
+        confirm,
+
+    };
+    localStorage.setItem("signup_details",JSON.stringify(dataobj))
+       
+    }else{
+        alert("Wrong Password ");
+        event.preventDefault()
+}
+  
+}
+</script>
