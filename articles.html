@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
     <style>
+        body{
+            /* background-color: antiquewhite; */
+        }
          #nav {
             display: flex;
             /* margin-top: 200px; */
@@ -56,7 +59,7 @@
         body{
             margin: 0px;
             padding: 0px;
-            background-color:aliceblue;
+            background-color:antiquewhite;
         }
         #upper h2{
             text-align: center;
@@ -90,6 +93,23 @@
         #upper{
             text-align: center;
         }
+         a{
+		text-decoration: none;
+
+	   }
+       #bottom{
+            margin-top: 100px;
+            display: flex;
+            justify-content:space-between;
+            height: 300px;
+            background-color: rgb(28, 131, 28);
+        }
+        #bottom div{
+            width: 20%;
+            height: 100px;
+            font-size: small;
+            border: 2px red;
+        }
     </style>
 </head>
 <body>
@@ -100,17 +120,25 @@
     <div id="top">
         <img id="logo" src="./logs.png" alt="">
         <div id="sub-1">
+            <a href="./savelives.html">
             <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+        </a>
+           <a href="https://www.facebook.com/KindMeal.my">
             <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+           </a>
+           <a href="https://twitter.com/KindMeal">
             <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </a>
         </div>
         <div id="sub-2">
-            <button>Login</button>
+			<button id="before_login"> <a href="./login.html"> Email</a></button>
+            <button  id="before_signup"><a href="./signup.html"> sign-up</a></button>
+            <button onclick="logout()"> <a href="#"></a> Sign out</button>
             <button>Facebook</button>
-            <button>Email</button>
-            <button>sign-up</button>
+           
+			
         </div>
-        
+        <h4 id="user_name"> </h4>
     </div>
     <div id="nav">
         <h4> <a href="./index.html"> Home </a></h4>
@@ -245,5 +273,80 @@
             </div>
         </div>
     </div>
+    <div id="bottom">
+        <div>General<br>
+            Homebr <br>
+            Sign Up <br>
+            Businesses / Restaurateurs <br>
+            Advertising <br> 
+            About KindMeal.my<br>
+            Help & FAQ<br>
+            Terms & Conditions<br>
+            Inspiring Partners<br>
+            Lifestyle Ambassadors<br>
+            Jobs & Careers<br>
+            Contact Us</div>
+        <div>Features<br>
+            Meat-Free Deals<br>
+            Tasty Menus<br>
+            Kind Moments<br>
+            Meat-Free Recipes<br>
+            Member Recommendations<br>
+            Featured Restaurants<br>
+            Vegetarian & Vegan Directory<br>
+            Food Map<br>
+            Become A Superhero<br>
+            Vegan News & Vegetarian Articles<br>
+            Latest Comments</div>
+        <div>Social Media<br>
+            KindMeal Widget<br>
+            Facebook<br>
+            Twitter<br>
+            Instagram</div>
+        <div>Mobile<br>
+            iPhone & iPod App<br>
+            Android App<br>
+            
+            Exciting Promos<br>
+            Gadhimai: Ending Mass Slaughter<br>
+            Free Meals<br>
+            Food Bloggers<br>
+            Uber CHIRP<br>
+            Jane Goodall Contest<br>
+            Win Digi iPhone 6<br>
+            Feed The Poor<br>
+            Win Superhero Gifts<br>
+            Win an iPad Mini 3</div>
+        <div>PetFinder.my<br>
+            Adopt A Pet<br>
+            Smartphone Apps<br>
+            WAGazine<br>
+            Discussion Forum<br>
+            Medical Fund</div>
+    </div>
 </body>
 </html>
+<script>
+    var hidden = false;
+	let login_detail = JSON.parse(localStorage.getItem("signup_details"));
+	let login_status=localStorage.getItem("login_status")
+	// console.log(login_status);exit();
+	if(login_status=='true'){
+		document.getElementById("user_name").innerText=login_detail.name
+		hidden=true
+		// var x=document.getElementsById("before_login")
+
+		document.getElementById("before_login").style.visibility="hidden";
+		document.getElementById("before_signup").style.visibility="hidden";
+	}else{
+		document.getElementById("before_login").style.visibility="visible";
+		document.getElementById("before_signup").style.visibility="visible";
+
+		window.location = "login.html";
+	}
+	
+	function logout(){
+		localStorage.setItem("login_status",false)
+		window.location = "login.html";
+	}
+</script>

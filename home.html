@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+		body{
 			background-color: antiquewhite;
 		}
         #nav {
@@ -130,10 +130,8 @@
 		text-decoration: none;
 
 	   }
-       #seven img{
-        width: 100%;
-       }
        #bottom{
+        margin-top: 100px;
             display: flex;
             justify-content:space-between;
             height: 300px;
@@ -166,12 +164,15 @@
         </a>
         </div>
         <div id="sub-2">
-            <button> <a href="./login.html"> Login</a></button>
+			<button id="before_login"> <a href="./login.html"> Email</a></button>
+            <button  id="before_signup"><a href="./signup.html"> sign-up</a></button>
+            <button onclick="logout()"> <a href="#"></a> Sign out</button>
             <button>Facebook</button>
-            <button> <a href=""> Email</a></button>
-            <button><a href="./signup.html"> sign-up</a></button>
+           
+			
         </div>
-        
+        <h4 id="user_name"> </h4>
+		
     </div>
     <div id="nav">
         <h4> <a href="./index.html"> Home </a></h4>
@@ -290,10 +291,6 @@
     <div>
         <img src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="">
     </div>
-
-</div>
-<div id="footer">
-
 
 </div>
 <div id="bottom">
@@ -465,9 +462,7 @@
          document.querySelector("#five1").append(div)
          five=five+1
     })
-
-
-    var hidden = false;
+	var hidden = false;
 	let login_detail = JSON.parse(localStorage.getItem("signup_details"));
 	let login_status=localStorage.getItem("login_status")
 	// console.log(login_status);exit();

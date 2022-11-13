@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: antiquewhite;
+        }
+        #nav {
+            display: flex;
+            /* margin-top: 200px; */
+            justify-content: space-evenly;
+            background-color: green;
+            color: white;
+            height: 60px;
+        }
+
+        #top {
+            display: flex;
+        }
+
+        #logo {
+            margin-right: 80px;
+            width: 200px;
+            height: 80px;
+        }
+
+        #sub-1>img {
+            width: 50px;
+            height: 50px;
+            margin-right: 30px;
+        }
+
+        #sub-1 {
+            display: flex;
+            margin: 5px 20px 5px 0px;
+        }
+
+        #sub-2 {
+            display: flex;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        #sub-2>button,
+        button {
+            width: 80px;
+            height: fit-content;
+        }
+        #nav>h4:hover {
+            background-color: rgb(4, 82, 4);
+        }
+/* //////////Nav barr csss part */
+
+        h1{
+            text-align: center;
+            font-size:xx-large;
+            color: blue;
+        }
+        h2,h4,p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .two{
+            display: flex;
+
+        }
+        .two div{
+            width: 40%;
+            height: 200px;
+            margin-bottom: 200px;
+            
+        }
+        .two div img{
+            width: 80%;
+            height: 300px;
+        }
+        .three button{
+            height: 30px; 
+            border-radius: 50px;
+            border: 0px;
+            margin-left: 200px;
+            background-color: rgb(130, 130, 214);
+        }
+        a{
+            text-decoration: none;
+        }
+        #bottom{
+            display: flex;
+            justify-content:space-between;
+            height: 300px;
+            background-color: rgb(28, 131, 28);
+        }
+        #bottom div{
+            width: 20%;
+            height: 100px;
+            font-size: small;
+            border: 2px red;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- nav bar part start   -->
+ <div id="top">
+    <img id="logo" src="./logs.png" alt="">
+    <div id="sub-1">
+        <a href="./savelives.html">
+        <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+    </a>
+       <a href="https://www.facebook.com/KindMeal.my">
+        <img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+       </a>
+       <a href="https://twitter.com/KindMeal">
+        <img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+    </a>
+    </div>
+    <div id="sub-2">
+        <button id="before_login"> <a href="./login.html"> Email</a></button>
+        <button  id="before_signup"><a href="./signup.html"> sign-up</a></button>
+        <button onclick="logout()"> <a href="#"></a> Sign out</button>
+        <button>Facebook</button>
+       
+        
+    </div>
+    <h4 id="user_name"> </h4>
+    
+</div>
+<div id="nav">
+    <h4> <a href="./index.html"> Home </a></h4>
+    <h4> <a href="./mealdeal.html">Meal Deals</a> </h4>
+    <h4> <a href="./kindmoment.html"> KindMoments</a></h4>
+    <h4> <a href="./hotpick.html"> Hot Picks </a></h4>
+    <h4> <a href="./recipe.html"> Recipes</a></h4>
+    <h4> <a href="./directoy.html"> Directory </a></h4>
+    <h4> <a href="./articles.html"> Articles </a></h4>
+    <h4> <a href="./help.html"> Help</a></h4>
+</div>
+
+
+
+    <h1>Save Lives with Your Blog</h1>
+    <p>Have a blog or website? Insert the KindMeal Widget to feature delicious meat-free meals now. <br>
+
+        Every meat-free meal consumed saves a precious animal life, improves our health and contributes <br>
+         to a better environment. Oh, and it saves money too! <br>
+        
+        A few minutes of your time is all it takes to change the lives of others.
+        </p>
+    <div class="two">
+        <div class="three">
+            <h2>
+                KindMeal Widget Code</h2>
+                <h4>
+                    Please login first to obtain your unique widget code.</h4>
+                    <button ><a href="./login.html">Login</a></button>
+        </div>
+        <div><img src="https://www.kindmeal.my/photos/deal/6/642-3775-m.jpg" alt=""></div>
+
+    </div>
+    
+    <div id="bottom">
+        <div>General<br>
+            Homebr <br>
+            Sign Up <br>
+            Businesses / Restaurateurs <br>
+            Advertising <br> 
+            About KindMeal.my<br>
+            Help & FAQ<br>
+            Terms & Conditions<br>
+            Inspiring Partners<br>
+            Lifestyle Ambassadors<br>
+            Jobs & Careers<br>
+            Contact Us</div>
+        <div>Features<br>
+            Meat-Free Deals<br>
+            Tasty Menus<br>
+            Kind Moments<br>
+            Meat-Free Recipes<br>
+            Member Recommendations<br>
+            Featured Restaurants<br>
+            Vegetarian & Vegan Directory<br>
+            Food Map<br>
+            Become A Superhero<br>
+            Vegan News & Vegetarian Articles<br>
+            Latest Comments</div>
+        <div>Social Media<br>
+            KindMeal Widget<br>
+            Facebook<br>
+            Twitter<br>
+            Instagram</div>
+        <div>Mobile<br>
+            iPhone & iPod App<br>
+            Android App<br>
+            
+            Exciting Promos<br>
+            Gadhimai: Ending Mass Slaughter<br>
+            Free Meals<br>
+            Food Bloggers<br>
+            Uber CHIRP<br>
+            Jane Goodall Contest<br>
+            Win Digi iPhone 6<br>
+            Feed The Poor<br>
+            Win Superhero Gifts<br>
+            Win an iPad Mini 3</div>
+        <div>PetFinder.my<br>
+            Adopt A Pet<br>
+            Smartphone Apps<br>
+            WAGazine<br>
+            Discussion Forum<br>
+            Medical Fund</div>
+    </div>
+</body>
+</html>
