@@ -69,15 +69,11 @@ KindMeal is Malaysia's pioneering meat-free lifestyle platform. We provide an ef
 <img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/help2.png?raw=true" width="90%"/>
 <img src="https://github.com/vishal-girhepunje/KindMeal-Clone/blob/main/ImagesOfSS/help3.png?raw=true" width="90%"/>
    
-   
-
-
-  
-   
-
 # Tech Stacks Used
 - Javascript
 - CSS
 - HTML
-# Individual Project built in 5 days
-# Overview Of Project
+
+
+
+
